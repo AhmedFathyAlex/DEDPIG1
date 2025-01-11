@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     fun getData(name:String){
-//        val bottomFragment = supportFragmentManager.findFragmentById(R.id.bottomFragment) as BottomFragment
-//            bottomFragment.updateText(name)
+        val bottomFragment = supportFragmentManager.findFragmentById(R.id.bottomFragment) as BottomFragment
+            bottomFragment.updateText(name)
 
     }
 

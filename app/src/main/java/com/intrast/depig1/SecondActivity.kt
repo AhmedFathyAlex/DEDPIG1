@@ -30,8 +30,7 @@ class SecondActivity : AppCompatActivity() {
     fun getData(name: String) {
     val bottomFragment = BottomFragment.newInstance(name)
         if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            supportFragmentManager.beginTransaction().replace(R.id.container2, bottomFragment)
-                .commit()
+            supportFragmentManager.beginTransaction().replace(R.id.container2, bottomFragment).commit()
         }
 
     }

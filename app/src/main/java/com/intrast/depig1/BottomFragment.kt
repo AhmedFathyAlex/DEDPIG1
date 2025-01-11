@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.intrast.depig1.databinding.FragmentBottomBinding
 
 
@@ -22,6 +23,10 @@ class BottomFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val name = arguments?.getString("name")
         updateText(name ?: "Empty")
+
+        binding.endButton.setOnClickListener {
+            findNavController().navigate(R.id.action_bottomFragment2_to_finalFragment)
+        }
     }
 
 

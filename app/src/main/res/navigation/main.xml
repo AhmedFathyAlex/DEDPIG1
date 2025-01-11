@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/topFragment2">
+
+    <fragment
+        android:id="@+id/topFragment2"
+        android:name="com.intrast.depig1.TopFragment"
+        android:label="fragment_top"
+        tools:layout="@layout/fragment_top" >
+        <action
+            android:id="@+id/action_topFragment2_to_bottomFragment2"
+            app:destination="@id/bottomFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bottomFragment2"
+        android:name="com.intrast.depig1.BottomFragment"
+        android:label="fragment_bottom"
+        tools:layout="@layout/fragment_bottom" >
+        <action
+            android:id="@+id/action_bottomFragment2_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.intrast.depig1.FinalFragment"
+        android:label="fragment_final"
+        tools:layout="@layout/fragment_final" />
+</navigation>
